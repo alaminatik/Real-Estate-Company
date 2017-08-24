@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="A Bootstrap based app landing page template">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+        <title>Profile</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/custom1.css" rel="stylesheet">
+        <link href="css/flexslider.css" rel="stylesheet">
+
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#topWrap">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-home fa-2x"></i>
+                            <!--								<i class="fa fa-mobile fa-stack-1x fa-inverse"></i>-->
+                        </span>
+                        Realestate <span class="title">company</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+<!--                        <li><a href="Our Service.html">Our Service</a></li>-->
+                        
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Service<span class="caret"></span></a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="Our Service.html">Customer service</a></li>
+                                    <li><a  href="#">Buying service</a></li>
+                                    <li><a href="#">Selling service</a></li>
+                                    <li><a href="#">Corporate service</a></li>
+                                    <li><a href="#">Export</a></li>
+                                    <li><a href="#">Import</a></li>
+                                </ul>
+
+                            </li>
+                        
+                        <li><a href="Selling.html">Selling</a></li>
+                        <li><a href="Project.html">Project</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+
+                        <!--                        <li><a href="Login.html">Profile</a></li>-->
+
+                        <li class="dropdown"><a href="Login.html" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span> Profile <b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">Logout</a></li>
+                                <li><a href="Login.html">Registration</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#my_modal" data-toggle="modal">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="my_modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h3>This is company form</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h3>Login here</h3>
+                                <form action="" method="post">
+                                    <div class="form-group well well-sm">
+                                        <label for="user">Username<span class="text-danger"><big><big>*</big></big></span></label>
+                                        <input type="email" id="user" class="form-control">
+                                    </div>
+                                    <div class="form-group well well-sm">
+                                        <label for="pass">Password<span class="text-danger"><big><big>*</big></big></span></label>
+                                        <input type="password" id="pass" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-7 well well-sm">
+                                <div class="alert alert-warning">
+                                    <strong>Not yet registered! Then register first.</strong>
+                                </div>
+
+                                <form action="" method="post" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="first" class="control-label col-lg-3">First name</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="first">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last" class="control-label col-lg-3">Last name</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="last">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="control-label col-lg-3">Email</label>
+                                        <div class="col-lg-9">
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-lg-3">Password</label>
+                                        <div class="col-lg-9">
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact" class="control-label col-lg-3">Contact number</label>
+                                        <div class="col-lg-9">
+                                            <input type="number" class="form-control" id="contact">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address" class="control-label col-lg-3">Address</label>
+                                        <div class="col-lg-9">
+                                            <textarea id="address" class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-9 col-lg-offset-3">
+                                            <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <h3 class="pull-left">All process by Realestate company</h3>
+                        <button class="close" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="topWrap" class="jumbotron">
+            <div class="container">
+                <div class="col-md-6 col-md-push-6 jumboText">
+                    <h1>Realestate company</h1>
+                    <h2>Realestate company is Best Solution to Sell and Buy House Online</h2>
+
+                </div>
+                <div class="col-md-6 col-md-pull-6 hidden-xs">
+                    <div class="mobile">
+                        <div class="mobileSlider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="assets/img/screen1.jpg"/>
+                                </li>
+                                <li>
+                                    <img src="assets/img/screen2.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <form align="center">
+            <fieldset align="center">
+                <legend><font color="green">Registration Form</legend>
+                <table align="center">
+                    <tr>
+                        <td>First Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="first_name" placeholder="first name" size="40" required=""></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Last Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="last_name" placeholder="last name" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="father_name" placeholder="Father's name" size="40" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="mother_name" placeholder="Mother's name" size="40" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>:</td>
+                        <td><input type="date" name="date" size="40" required="" disabled=""></td>
+                    </tr>
+                    <tr>
+                        <td>Marital status</td>
+                        <td>:</td>
+                        <td>
+                            <select name="select" required="">
+                                <option>select a option</option>
+                                <option value='0'>Married</option>
+                                <option value='1'>Single</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email"  size="40" required="" value="alaminatekur111@yahoo.com" readonly=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact No</td>
+                        <td>:</td>
+                        <td><input type="number" name="contact_number" placeholder="contact number"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Present Address</td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="present_address" cols="40" rows="10"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Permanent Address</td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="permanent_address" cols="40" rows="10"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Country selection</td>
+                        <td>:</td>
+                        <td>
+                            <select name="coun_select">
+                                <option>--select a option---</option>
+                                <option value='0'>Bangladesh</option>
+                                <option value='1'>India</option>
+                                <option value='2'>Paris</option>
+                                <option value='3'>Australia</option>
+                                <option value='4'>America</option>
+                                <option value='5'>Japan</option>
+                                <option value='6'>Uganda</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>
+                            <input type='radio' name='gender'> Male
+                            <input type='radio' name='gender'> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agreement</td>
+                        <td>:</td>
+                        <td>
+                            <input type='checkbox' name='yes' checked=""> Yes
+                            <input type='checkbox' name='no'> No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload a image</td>
+                        <td>:</td>
+                        <td>
+                            <input type='file' name='image' > 
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" name='btn' value='submit' style="background-color: #052945; color: whitesmoke"></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>Copyright &copy; 2016 By Realestate company <a href="http://facebook.com/Realestate company">Our facebook</a>. All Rights Reserved</p>
+                        <p class="social">
+                            <a href="https://www.facebook.com/bootstrapbay">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/bootstrapbay">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://plus.google.com/+BootstrapbayThemes">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="http://www.youtube.com/user/bootstrapbayofficial">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flexslider.js"></script>
+
+
+    </body>
+</html>
